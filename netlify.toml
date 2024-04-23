@@ -1,0 +1,6 @@
+[build]
+command = "sed -i \"s|TEST_PLACEHOLDER|${TEST_VALUE}|g\" netlify.toml && yarn build"
+
+[[redirects]]
+    from = "TEST_PLACEHOLDER"
+    to = "/"
