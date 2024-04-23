@@ -2,5 +2,9 @@
 command = "sed -i \"s|DRUPAL_DOMAIN|${GATSBY_DRUPAL_ENDPOINT}|g\" netlify.toml && yarn build"
 
 [[redirects]]
-    from = "TEST_PLACEHOLDER/first-slug"
+    from = "DRUPAL_DOMAIN/first-slug"
+    to = "/"
+
+[[redirects]]
+    from = "DRUPAL_DOMAIN/first-slug"
     to = "/"
